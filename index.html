@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="grid place-content-center">
+
+  <main class="flex flex-col gap-5 justify-around items-center w-fit p-6 text-center">
+    <picture>
+      <img class="w-24 align-middle" src="./images/logo.svg" alt="logo">
+    </picture>
+    <h1 class="text-3xl font-light text-gray-400">We are launching <span class="font-bold text-gray-900">soon!</span></h1>
+    
+    <p class="text-lg font-medium text-gray-900">Subscribe and get notified</p>
+    <form id="formSub" class="relative flex flex-col md:flex-row gap-y-2 md:gap-4 w-max">
+      <input type="email" placeholder="Your email address" class="border-2 border-slate-200 max-w-72 md:w-96 h-12 rounded-full p-4 text-ms">
+      <p class="error hidden text-xs italic font-medium  text-center text-red-600 md:absolute -bottom-4 left-4">Please provide a valid email address</p>
+      <p class="succes hidden text-xs italic font-medium  text-center text-green-600 md:absolute -bottom-4 left-4"></p>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-400 text-white text-sm font-semibold  rounded-full max-w-72 md:w-52 h-12">Notify Me</button>
+    </form>
+    
+    
+    <picture>
+      <img class="w-auto md:max-w-xl mt-5" src="./images/illustration-dashboard.png" alt="">
+    </picture>
+
+    <div class="flex gap-5 text-blue-700 text-xl cursor-pointer">
+      <i class='bx bxl-facebook border-solid border border-gray-300 rounded-full p-2 hover:bg-blue-700 hover:text-white'></i>
+      <i class='bx bxl-twitter border-solid border border-gray-300 rounded-full p-2 hover:bg-blue-700 hover:text-white' ></i>
+      <i class='bx bxl-instagram border-solid border border-gray-300 rounded-full p-2 hover:bg-blue-700 hover:text-white' ></i>
+    </div>
+    <p class="text-xs text-gray-400">&copy; Copyright Ping. All rights reserved.</p> 
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Julian Perez</a>.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
